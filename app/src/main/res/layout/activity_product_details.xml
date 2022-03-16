@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".product_details.ProductDetails">
+
+    <include layout="@layout/action_bar2" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                //Product Name
+
+                <TextView
+                    android:id="@+id/detailsProductName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:gravity="center"
+                    android:text="SAMPLE LIPSTICK"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                //Product Image
+
+                <ImageView
+                    android:id="@+id/detailsProductImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/detailsProductName"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:src="@drawable/lipstick_empty" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detailsProductImage">
+
+                    //Product Price
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:text="Price"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/detailsProductPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:gravity="right"
+                        android:text="----"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    //Product Quantity
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="70dp"
+                        android:text="Quantity"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+
+                    //Quantity
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/detailsProductPrice"
+                        android:gravity="right">
+
+                        <ImageButton
+                            android:id="@+id/counter_minus"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="100dp"
+                            android:background="@drawable/button_minus"
+                            android:onClick="decrementValue" />
+
+                        <TextView
+                            android:id="@+id/detailsQuantity"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_toRightOf="@+id/counter_minus"
+                            android:padding="10dp"
+                            android:text="---"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <ImageButton
+                            android:id="@+id/counter_add"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/detailsQuantity"
+                            android:background="@drawable/button_add"
+                            android:onClick="incrementValue"
+                            android:padding="10dp" />
+                    </RelativeLayout>
+
+
+                    //Divider
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="120dp"
+                        android:background="@color/black" />
+
+                    //Total Price
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/divider"
+                        android:layout_marginTop="25dp"
+                        android:text="Total"
+                        android:textColor="@color/black"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/detailsTotalPayment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/divider"
+                        android:layout_marginTop="25dp"
+                        android:gravity="right"
+                        android:text="---"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/bttn_order"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/item"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/button_buy_product"
+            android:onClick="addToCart"
+            android:text="Add to Cart"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

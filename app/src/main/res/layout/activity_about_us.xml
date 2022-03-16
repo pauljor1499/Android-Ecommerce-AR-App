@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".about_us.AboutUsActivity"
+    android:background="@color/white"
+    >
+
+  <include layout="@layout/action_bar2"/>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/action_bar2_layout"
+      >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+      <TextView
+          android:id="@+id/about_title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginRight="20dp"
+          android:text="ABOUT US"
+          android:textAlignment="center"
+          android:textColor="#FF00E5"
+          android:textSize="20dp"
+          android:textStyle="bold" />
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@+id/about_title"
+          android:layout_marginTop="80dp"
+          android:padding="10dp"
+          >
+
+        <RelativeLayout
+            android:id="@+id/about_content1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+          <ImageView
+              android:id="@+id/about_image1"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_marginTop="10dp"
+              android:src="@drawable/about_us_image1" />
+
+          <TextView
+              android:id="@+id/about_title1"
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@+id/about_image1"
+              android:fontFamily="cursive"
+              android:gravity="center"
+              android:text="We Deliver Happiness"
+              android:textColor="#FF00E5"
+              android:textSize="20dp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/about_title1"
+              android:layout_alignParentEnd="true"
+              android:layout_toRightOf="@+id/about_image1"
+              android:gravity="center"
+              android:padding="10dp"
+              android:text="We are a Social Shopping Platform that offers unique French-inspired fashion and beauty products at best value. We connect people both online and offline through our social shopping platform, social media channels, Authorized Business Centers, and members. We provide customers the opportunity to become successful entrepreneurs by having their own life-changing business by becoming Authorized Resellers."
+              android:textColor="@color/black"
+              android:textSize="12dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/about_content2"
+            android:layout_below="@+id/about_content1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:padding="10dp">
+
+          <ImageView
+              android:id="@+id/about_image2"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_alignParentEnd="true"
+              android:layout_marginTop="10dp"
+              android:src="@drawable/about_us_image2" />
+
+          <TextView
+              android:id="@+id/about_title2"
+              android:layout_toLeftOf="@+id/about_image2"
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:fontFamily="cursive"
+              android:gravity="center"
+              android:text="We are Fashion Freaks"
+              android:textColor="#FF00E5"
+              android:textSize="20dp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/about_title2"
+              android:layout_toLeftOf="@+id/about_image2"
+              android:gravity="center"
+              android:padding="10dp"
+              android:textColor="@color/black"
+              android:text="Holala C’est Paris! We know fashion and we’ve successfully brought the Paris fashion scene to your hands for 25 years! Our Parisian style is designed by our creative and passionate multicultural team whose aim is to give every woman access to affordable yet classy, elegant and stylish fashion."
+              android:textSize="12dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/about_content3"
+            android:layout_below="@+id/about_content2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:padding="10dp">
+
+          <ImageView
+              android:id="@+id/about_image3"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_marginTop="10dp"
+              android:src="@drawable/about_us_image3" />
+
+          <TextView
+              android:id="@+id/about_title3"
+              android:layout_toRightOf="@+id/about_image3"
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:fontFamily="cursive"
+              android:gravity="center"
+              android:text="We are Social Tech"
+              android:textColor="#FF00E5"
+              android:textSize="20dp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/about_title3"
+              android:layout_alignParentEnd="true"
+              android:layout_toRightOf="@+id/about_image3"
+              android:gravity="center"
+              android:padding="10dp"
+              android:text="We’ve revolutionized direct selling into a modern concept of Social Shopping. We keep in mind the power of social links and the advantage of getting a recommendation from people you know and trust. Our customers have the freedom to sell, train, recommend, grow their network and the community offline and online."
+              android:textColor="@color/black"
+              android:textSize="12dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/about_content4"
+            android:layout_below="@+id/about_content3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:padding="10dp">
+
+          <ImageView
+              android:id="@+id/about_image4"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+              android:layout_alignParentEnd="true"
+              android:layout_marginTop="10dp"
+              android:src="@drawable/about_us_image4" />
+
+          <TextView
+              android:id="@+id/about_title4"
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+              android:layout_toLeftOf="@+id/about_image4"
+              android:fontFamily="cursive"
+              android:gravity="center"
+              android:text="We are Tribes"
+              android:textColor="#FF00E5"
+              android:textSize="20dp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/about_title4"
+              android:layout_toLeftOf="@+id/about_image4"
+              android:gravity="center"
+              android:padding="10dp"
+              android:text="We build communities and our aim is to deliver happiness to all our customers. We hold training sessions and share best practices to empower our communities to become successful entrepreneurs. We celebrate success and give travel opportunities to our top leaders to local and international destinations. With our passion combined with the power of social and digital media, we have helped change the lives of thousands of women. We can conquer the world!"
+              android:textColor="@color/black"
+              android:textSize="12dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/about_bottom_text"
+            android:layout_below="@+id/about_content4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Start your own Sophienista story! \nJoin Sophie Paris today."
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_below="@+id/about_bottom_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="All of the information used on this app are for research \npurposes ONLY!"
+            android:textSize="12dp" />
+
+      </RelativeLayout>
+
+    </RelativeLayout>
+
+  </ScrollView>
+
+</RelativeLayout>

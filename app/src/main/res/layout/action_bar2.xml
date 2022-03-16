@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/action_bar2_layout"
+    >
+
+    <RelativeLayout
+        android:id="@+id/action_bar2_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="15dp">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_baseline_arrow_back_ios_24"
+            android:backgroundTint="@color/black" />
+
+        <ImageView
+            android:id="@+id/app_bar_title"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/sophie_logo" />
+
+        <ImageButton
+            android:id="@+id/catalog_cart_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/ic_baseline_shopping_cart_24"
+            android:backgroundTint="@color/black" />
+
+        <com.nex3z.notificationbadge.NotificationBadge
+            android:id="@+id/catalog_cart_badge"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-30dp"
+            android:layout_toRightOf="@+id/catalog_cart_icon"
+            app:nbMaxTextLength="2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/action_bar2_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#EE03FF"
+        />
+
+</RelativeLayout>
+

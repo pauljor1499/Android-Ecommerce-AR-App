@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".augmented_reality.MakeupActivity">
+
+        <fragment
+            android:id="@+id/face_fragment"
+            android:name="com.dev.Lipstick_AR.augmented_reality.service.FaceArFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:onClick="backButton"
+            android:background="@drawable/ic_baseline_arrow_back_ios_24"
+            />
+
+</RelativeLayout>
